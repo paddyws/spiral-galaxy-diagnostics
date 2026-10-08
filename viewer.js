@@ -62,7 +62,7 @@ function render(){
  table();notifyHeight();
 }
 function notifyHeight(){requestAnimationFrame(()=>{if(parent!==window)parent.postMessage({type:'faceon-pitch-view-height',stem:D.stem,height:Math.ceil(document.getElementById('app').getBoundingClientRect().height+36)},'*');});}
-controls.method.value=(params.get('method') in D.methods)?params.get('method'):'radial_tracks';
+controls.method.value=(params.get('method') in D.methods)?params.get('method'):'track_v2';
 controls.method.addEventListener('change',chooseMethod);
 for(const c of [controls.group,controls.image,controls.overlay,controls.labels,controls.boundary])c.addEventListener('change',render);
 document.querySelectorAll('img').forEach(im=>im.addEventListener('load',notifyHeight));
