@@ -1,0 +1,9 @@
+.deps/
+fits_cache/
+__pycache__/
+*.log
+*_probe.fits
+data/audit-progress.json
+baseline/
+qa/
+probe_*.fits

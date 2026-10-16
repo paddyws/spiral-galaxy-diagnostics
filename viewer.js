@@ -70,3 +70,6 @@ document.getElementById('gap-details').addEventListener('toggle',notifyHeight);
 window.addEventListener('resize',notifyHeight);
 new ResizeObserver(notifyHeight).observe(document.getElementById('app'));
 chooseMethod();
+
+/* Supplement existing diagnostics with independently audited survey downloads. */
+{ const fitsScript = document.createElement('script'); fitsScript.src = 'fits-links.js?v=1'; document.body.append(fitsScript); }
